@@ -1,0 +1,4 @@
+configuration mongodb (windows)
+#connection to database mongodb
+1. local (download)
+2.cloud (attlas)

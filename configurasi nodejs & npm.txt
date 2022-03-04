@@ -1,0 +1,38 @@
+
+
+1. download & install (add to path)
+
+2. cek nodejs & npm
+
+   > buka command promp
+   > node -v (cek versi nodejs)
+   > npm -v (cek versi npm)
+   > node (masuk ke nodejs)
+   > .help (petunjuk nodejs) 
+   > .exit (keluar dari nodejs) 
+
+3. menjalankan file nodejs  
+   > buka command promp 
+   > cd folder file nodejs
+   > node . (khusus index.js), node app (file app.js)
+  
+
+4. install package dengan npm 
+   > buka command promp 
+   > cd folder yang mau di install package
+   > cari package diwebsite npm (https://www.npmjs.com)
+   > npm init (inisialisasi npm)
+   > npm uninstall <package-name> (delete package npm)
+   > npm install validator@13.5.2 (install package validator versi 13.5.2)
+
+   > npm install --save-dev nodemon (install package nodemon secara local)
+   > npm install -g nodemon (install package nodemon secara global)
+   > nodemon / nodemon app (live file nodejs dengan nodemon)
+   > npm start (run script via npm) -> package.json(berikan nilai pada "start" : "node app")
+
+
+
+
+shortcut app
+
+Computer - properties - advanced system settings - environment variables - path - edit 

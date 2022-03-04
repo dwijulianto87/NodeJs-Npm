@@ -1,0 +1,38 @@
+<h2>Daftar contact</h2>
+<a class="btn btn-primary mb-2" href="/contact/add">Tambah contact</a>
+
+<!-- flash -->
+<% if (msg.length !== 0) { %>
+  <div class="alert alert-success" role="alert">
+    <%= msg %>
+  </div>
+<% } %>
+
+<% if(contacts.length === 0) { %>
+  <div class="alert alert-dark" role="alert">
+    Daftar Contact tidak ada !
+  </div>
+
+<% }else {%>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">No Hp</th>
+          <th scope="col">Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% contacts.forEach((contact, i) => { %>
+              <tr>
+                  <th scope="row"><%= i+1 %> </th>
+                  <td><%= contact.nama %> </td>
+                  <td><%= contact.nohp %> </td>
+                  <td><a href="/contact/<%= contact.nama %>" class="btn btn-success badge rounded-pill"><i class="bi bi-info-circle"></i> detail</a></td>
+                </tr>
+          <% }) %>
+
+      </tbody>
+    </table>
+<% } %> 
